@@ -97,7 +97,7 @@ Each implementation includes the following PWA features:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/progressive-web-app.git
+   git clone https://github.com/R-nasPT/progressive-web-app.git
    cd progressive-web-app
    ```
 
