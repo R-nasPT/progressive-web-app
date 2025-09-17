@@ -5,6 +5,13 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Next PWA App",
     short_name: "NextPWA",
     description: "My Progressive Web App built with Next.js",
+    // id: "/?utm_source=pwa",
+    // start_url: "/?utm_source=pwa",
+    start_url: "/",
+    display: "standalone",
+    lang: "en",
+    categories: ["productivity"],
+    scope: "/",
     icons: [
       {
         src: "/icons/icon-192x192.png",
@@ -19,10 +26,6 @@ export default function manifest(): MetadataRoute.Manifest {
         purpose: "maskable",
       },
     ],
-    id: "/?utm_source=pwa",
-    start_url: "/?utm_source=pwa",
-    display: "standalone",
-    scope: "/",
     screenshots: [
       {
         src: "/og-image.png",
