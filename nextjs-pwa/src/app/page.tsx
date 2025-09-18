@@ -1,3 +1,10 @@
+import PWAInstallPrompt from "@/components/PWAInstallButton";
+
 export default function RootPage() {
-  return <div>RootPage</div>;
+  return (
+    <div>
+      RootPage
+      <PWAInstallPrompt />
+    </div>
+  );
 }
