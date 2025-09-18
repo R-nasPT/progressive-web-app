@@ -36,7 +36,25 @@ export default defineConfig({
             src: "icon-512x512.png",
             sizes: "512x512",
             type: "image/png",
-            purpose: "any maskable",
+            purpose: "maskable",
+          },
+        ],
+        screenshots: [
+          {
+            // src: "/screenshot-wide.png",
+            src: "og-image.png",
+            type: "image/png",
+            sizes: "1024x1024",
+            // sizes: "1280x720",
+            form_factor: "wide",
+          },
+          {
+            // src: "/screenshot-mobile.png",
+            src: "og-image.png",
+            sizes: "1024x1024",
+            // sizes: "750x1334",
+            type: "image/png",
+            // ไม่มี form_factor = ใช้กับ mobile
           },
         ],
       },
