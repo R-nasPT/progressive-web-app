@@ -36,40 +36,6 @@ This repository focuses on two main implementations, both built with **TypeScrip
   - 🔷 TypeScript first-class support
   - 📱 Built-in PWA optimizations
 
-## 📁 Project Structure
-
-```
-progressive-web-app/
-├── 📂 vite-react-pwa/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── hooks/
-│   │   ├── utils/
-│   │   └── types/
-│   ├── public/
-│   ├── vite.config.ts
-│   ├── tsconfig.json
-│   ├── package.json
-│   └── README.md
-├── 📂 nextjs-pwa/
-│   ├── app/
-│   │   ├── components/
-│   │   ├── lib/
-│   │   └── types/
-│   ├── public/
-│   ├── next.config.ts
-│   ├── tsconfig.json
-│   ├── package.json
-│   └── README.md
-├── 📂 shared/
-│   ├── 🎨 assets/
-│   ├── 🔷 types/
-│   └── 📋 docs/
-├── 🧪 tests/
-├── 📊 benchmarks/
-└── 📋 README.md
-```
-
 ## ✨ PWA Features
 
 Each implementation includes the following PWA features:
@@ -137,39 +103,6 @@ Each implementation includes the following PWA features:
    pnpm build
    ```
 
-## 📊 Performance Comparison
-
-| Implementation | Bundle Size | Build Time | PWA Score | Lighthouse Score | TypeScript |
-|---------------|-------------|------------|-----------|------------------|------------|
-| Vite + React  | TBD         | TBD        | TBD       | TBD              | ✅ Full    |
-| Next.js 15    | TBD         | TBD        | TBD       | TBD              | ✅ Full    |
-
-*Benchmarks will be updated as implementations are completed*
-
-## 🧪 Testing
-
-Each framework implementation includes comprehensive testing:
-
-```bash
-# Run all tests
-npm run test
-
-# Run PWA audit
-npm run audit:pwa
-
-# Run performance tests
-npm run test:performance
-
-# Run cross-browser tests
-npm run test:browser
-```
-
-## 📚 Documentation
-
-- [PWA Checklist](./docs/pwa-checklist.md)
-- [Performance Guidelines](./docs/performance.md)
-- [Deployment Guide](./docs/deployment.md)
-- [Contributing Guidelines](./CONTRIBUTING.md)
 
 ## 🙏 Acknowledgments
 
