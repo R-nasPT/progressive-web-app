@@ -1,6 +1,6 @@
 # 🚀 Progressive Web App Collection
 
-> A comprehensive collection of Progressive Web Apps built with different frameworks and technologies
+> A comprehensive collection of Progressive Web Apps built with different frameworks and technologies.
 
 [![PWA](https://img.shields.io/badge/PWA-Ready-blue.svg)](https://developers.google.com/web/progressive-web-apps/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
