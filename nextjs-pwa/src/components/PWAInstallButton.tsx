@@ -12,15 +12,28 @@ interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
 }
 
+interface NavigatorStandalone extends Navigator {
+  standalone?: boolean;
+}
+
+const isStandalone = () => {
+  return (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    (window.navigator as NavigatorStandalone).standalone === true ||
+    document.referrer.includes("android-app://")
+  );
+};
+
 export default function PWAInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showInstallButton, setShowInstallButton] = useState(false);
 
   useEffect(() => {
     // Check if app is already installed
-    // if (isStandalone()) {
-    //   return;
-    // }
+    if (isStandalone()) {
+      console.log('App is already running in standalone mode');
+      return;
+    }
 
     const handleBeforeInstallPrompt = (e: Event) => {
       e.preventDefault();
@@ -59,7 +72,7 @@ export default function PWAInstallPrompt() {
     setShowInstallButton(false);
   };
 
-  if (!showInstallButton) {
+  if (!showInstallButton || isStandalone()) {
     return null;
   }
 
